@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:body styleClass="${1}">
+    ${0}
+</h:body>
+]]></content>
+	<tabTrigger>jsf-body</tabTrigger>
+</snippet>

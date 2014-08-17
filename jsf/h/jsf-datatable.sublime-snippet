@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:dataTable id="${1}" value="#{${2}}" var="${3:item}" styleClass="${4}">
+    ${0}
+</h:dataTable>
+]]></content>
+	<tabTrigger>jsf-datatable</tabTrigger>
+</snippet>

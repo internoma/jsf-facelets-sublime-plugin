@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<ui:decorate template="${1:decorate-template.xhtml}">
+    ${0}
+</ui:decorate>
+]]></content>
+	<tabTrigger>jsf-decorate</tabTrigger>
+</snippet>

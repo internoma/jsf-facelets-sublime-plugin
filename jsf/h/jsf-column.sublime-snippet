@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:column id="${1}" headerClass="${2}" footerClass="${3}" rendered="${4}">
+    ${0}
+</h:column>
+]]></content>
+	<tabTrigger>jsf-column</tabTrigger>
+</snippet>

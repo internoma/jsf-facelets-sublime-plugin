@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<ui:composition template="${1:template.xhtml}">
+    ${0}
+</ui:composition>
+]]></content>
+	<tabTrigger>jsf-composition</tabTrigger>
+</snippet>

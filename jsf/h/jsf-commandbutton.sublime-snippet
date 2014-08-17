@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<h:commandButton id="${1}" action="${2}" value="${3}" />${0}
+]]></content>
+	<tabTrigger>jsf-commandbutton</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:form id="${1}" name="#{${2}}" method="${3:post}" enctype="${4:application/x-www-form-urlencoded}">
+    ${0}
+</h:form>
+]]></content>
+	<tabTrigger>jsf-form</tabTrigger>
+</snippet>

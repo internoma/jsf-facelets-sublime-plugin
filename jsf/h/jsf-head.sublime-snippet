@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:head rendered="${1}">
+    ${0}
+</h:head>
+]]></content>
+	<tabTrigger>jsf-head</tabTrigger>
+</snippet>

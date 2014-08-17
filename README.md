@@ -3,270 +3,101 @@ JSF & Facelets - Sublime Plugin
 
 A sublime plugin complete with JSF & Facelets snippets
 
-
-
 ## What's included - contents
 - [Installation](#installation)
-- [CDN](#cdn)
-- [Templates](#templates)
-- [Forms](#forms)
-- [Tables](#tables)
-- [Input](#input-fields-form-fields)
-- [Alerts](#alerts)
-- [Badges](#badges)
-- [Breadcrumbs](#breadcrumbs)
-- [Buttons](#buttons)
-- [Carousel](#carousel)
-- [Grid](#grid)
-- [Images](#images)
-- [Icons](#icons)
-- [Labels](#labels)
-- [Pagination](#pagination)
-- [Navigation](#navigation)
-- [Panels](#panels)
-- [List Groups](#list-groups)
-- [Media Objects](#media-objects)
-- [Icons](#icons)
-- [Clearfix](#clearfix)
-- [Wells](#wells)
+- [Snippets](#snippets)
 - [License](#license)
-
 
 ### Installation
 
 There are 3 methods for installing this plugin.
 
-1. Search for "Bootstrap 3 Snippets" via the "Package Control: Install Packages" menu.
+1. Search for "JSF & Facelets Snippets" via the "Package Control: Install Packages" menu.
 **Note:** If you don't have Sublime Package Control installed, you can find out how to install it here [https://sublime.wbond.net/installation](https://sublime.wbond.net/installation)
 
 2. Clone the repository into your Sublime Text 2/3 packages directory.
-`git clone https://github.com/JasonMortonNZ/bs3-sublime-plugin.git
+`git clone https://github.com/internoma/jsf-facelets-sublime-plugin.git
 
 3. Download the .zip file and unzip it into your Sublime Text 2/3 packages directory.
 **Note:** You can find your Sublime Text 2/3 packages directory by going to Preferences > Browse Packages.
 
-### CDN
+### SNIPPETS
+
+    <helpers />
+        jsf: #{value}
+    
+    <c: />
+
+        jsf-if: <c:if />
+        jsf-set: <c:set />
+
+    <h: /> http://www.jsftoolbox.com/documentation/help/12-TagReference/html/index.jsf
+
+        jsf-body: <h:body />
+        jsf-button: <h:button />
+        jsf-column: <h:column />
+        jsf-commandbutton: <h:commandButton />
+        jsf-commandlink: <h:commandLink />
+        jsf-datatable: <h:dataTable />
+        jsf-form: <h:form />
+        jsf-graphicimage: <h:graphicImage />
+        jsf-head: <h:head />
+        jsf-panelgroup: <h:panelGroup />
+        jsf-outputlink: <h:outputLink />
+        jsf-outputtext: <h:outputText />
+
+    <ui: /> http://www.jsftoolbox.com/documentation/facelets/10-TagReference/ui.jsf
+
+        jsf-component: <ui:component /> The UI Component tag inserts a new UIComponent instance into the JSF component tree.
+        jsf-composition: <ui:composition /> The UI Composition tag is a templating tag that wraps content to be included in another Facelet.
+        jsf-debug: <ui:debug /> The UI Debug tag allows you to display helpful information about the JSF component tree and scoped variables in your browser when you test your JSF pages.
+        jsf-decorate: <ui:decorate /> The UI Decorate tag is a templating tag that decorates content included from another Facelet.
+        jsf-define: <ui:define /> The Define tag is a templating tag that defines named content to be inserted into a template.
+        jsf-fragment: <ui:fragment /> The UI Fragment tag inserts a new UIComponent instance into the JSF component tree.
+        jsf-include: <ui:include /> The UI Include tag is a server-side include tag for Facelets.
+        jsf-insert: <ui:insert /> The UI Insert tag is a templating tag that declares a named content element to be defined by another Facelet.
+        jsf-param: <ui:param /> The UI Param tag is used to pass objects as named variables between Facelets. 
+        jsf-remove: <ui:remove /> The UI Remove tag is used to specify tags or blocks of content that should be removed from your page by the Facelets view handler at compile time.
+        jsf-repeat: <ui:repeat /> The UI Repeat tag is used to iterate over a collection of objects exposed to the JSF page as a value-binding EL expression.
+
+    <fn: />
+
+        jsf:upper: #{fn:toUpperCase([variable]/'texto')}
+        jsf:lower: #{fn:toLowerCase([variable]/'texto')}
+        
+
+
+
+###Following is the list of JSTL Functions:
+
+        Function                Description
+        ========                ===========
+        fn:contains()           Tests if an input string contains the specified substring.
+        fn:containsIgnoreCase() Tests if an input string contains the specified substring in a case insensitive way.
+        fn:endsWith()           Tests if an input string ends with the specified suffix.
+        fn:escapeXml()          Escapes characters that could be interpreted as XML markup.
+        fn:indexOf()            Returns the index withing a string of the first occurrence of a specified substring.
+        fn:join()               Joins all elements of an array into a string.
+        fn:length()             Returns the number of items in a collection, or the number of characters in a string.
+        fn:replace()            Returns a string resulting from replacing in an input string all occurrences with a given string.
+        fn:split()              Splits a string into an array of substrings.
+        fn:startsWith()         Tests if an input string starts with the specified prefix.
+        fn:substring()          Returns a subset of a string.
+        fn:substringAfter()     Returns a subset of a string following a specific substring.
+        fn:substringBefore()    Returns a subset of a string before a specific substring.
+        fn:toLowerCase()        Converts all of the characters of a string to lower case.
+        fn:toUpperCase()        Converts all of the characters of a string to upper case.
+        fn:trim()               Removes white spaces from both ends of a string.
+
+
 
 | Component                      | Snippet code                   |
 |------------------------------- | :-----------------------------:|
-| CDN link (both CSS & JS)       | bs3-cdn                        |
-| CDN link (CSS only)            | bs3-cdn:css                    |
-| CDN link (JS only)             | bs3-cdn:js                     |
+| this help                      | jsf-help                       |
+| '<c:if />'                     | jsf-if                         |
+| '<c:set />'                    | jsf-set                        |
 
-### Templates
-
-| Component                      | Snippet code                   |
-|------------------------------- | :-----------------------------:|
-| HTML5 Template Layout          | bs3-template:html5             |
-
-### Forms
-
-| Component       				 | Snippet code        			  |
-|------------------------------- | :-----------------------------:|
-| Form            				 | bs3-form            			  |
-| Inline Form     				 | bs3-form:inline     			  |
-| Horizontal Form 				 | bs3-form:horizontal 			  |
-
-### Tables
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Table                    		 | bs3-table                      |
-| Bordered Table           		 | bs3-table:bordered             |
-| Condensed Table          		 | bs3-table:condensed            |
-| Hover Table              		 | bs3-table:hover                |
-| Striped Table            		 | bs3-table:striped              |
-
-### Input Fields (Form fields)
-
-**Note:** you can add " :h " to the end of any input field snippet to make it compatible with Bootstrap 3 horizontal forms. **E.g.**
-- bs3-input:text:h
-- bs3-input:hidden:h
-
-
-| Component                		 | Snippet code                   | Options |
-|------------------------------- | :----------------------------: | :-----:	|
-| Label		 					 | bs3-input:label   			  |    		|
-| Text Input               		 | bs3-input:text 				  | :h 		|
-| Email Input 					 | bs3-input:email   			  | :h 		|
-| Password Input				 | bs3-input:password  			  | :h 		|
-| Hidden Input					 | bs3-input:hidden  			  | :h 		|
-| Url Input						 | bs3-input:url 	 			  | :h 		|
-| Color Input 					 | bs3-input:color   			  | :h 		|
-| Number Input 					 | bs3-input:number   			  | :h 		|
-| Range Input 					 | bs3-input:range   			  | :h 		|
-| Date Input 					 | bs3-input:date   			  | :h 		|
-| Week Input 					 | bs3-input:week   			  | :h 		|
-| Month Input 					 | bs3-input:month   			  | :h 		|
-| Time Input 					 | bs3-input:time   			  | :h 		|
-| Tel Input 					 | bs3-input:tel   	 			  | :h 		|
-| Search Input 					 | bs3-input:search   			  | :h 		|
-| Reset Input 					 | bs3-input:reset   			  | :h 		|
-| Submit Input 					 | bs3-input:submit   			  | :h 		|
-| Checkbox Input 				 | bs3-input:checkbox  			  | :h 		|
-| Radio Box Input 				 | bs3-input:radio  			  | :h 		|
-| Select Box 	 				 | bs3-select		  			  | :h 		|
-
-### Alerts
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Alert Box (Default)			 | bs3-alert 					  |
-| Danger Alert Box				 | bs3-alert:danger 			  |
-| Info Alert Box				 | bs3-alert:info				  |
-| Success Alert Box              | bs3-alert:success              |
-| Warning Alert Box				 | bs3-alert:warning			  |
-
-### Badges
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Badge (Default) 				 | bs3-badge 					  |
-
-### Breadcrumbs
-
-| Component                      | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Breadcrumbs                    | bs3-breadcrumbs                |
-
-### Carousel
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Carousel	      				 | bs3-carousel	       			  |
-
-### Buttons
-
-**Note:** all button snippets below can have any of the following options append to the end of the snippet *.
-- :danger
-- :default
-- :disabled
-- :info
-- :primary
-- :success
-- :warning
-
-**An example:**
-- bs3-button:success
-- bs3-large-button:disabled
-- bs3-block-button:warning
-
-| Component                		 | Snippet code                   | Options |
-|------------------------------- | :----------------------------: | :-----:	|
-| Button		 				 | bs3-button					  |  *		|
-| Block Button	 				 | bs3-block-button				  |  *		|
-| Mini Button		 			 | bs3-xs-button				  |	 *		|
-| Small Button		 			 | bs3-sm-button				  |	 *		|
-| Large Button		 			 | bs3-lg-button				  |	 *		|
-
-### Grid
-
-**Note:** The bs3-col snippet can be used both on its own or with the addition of a colon followed by the number of columns required: **E.g.**
-
-- bs3-col
-- bs3-col:6
-- bs3-col:12
-
-| Component                		 | Snippet code                   | Options |
-|------------------------------- | :----------------------------: | :-----:	|
-| Column		 				 | bs3-col						  | :1-12	|
-| Row			 				 | bs3-row						  |  		|
-| Container		 				 | bs3-container				  |			|
-
-### Icons
-
-| Component                      | Snippet code                   |
-|------------------------------- | :-----------------------------:|
-| Glyphicon		                 | bs3-icon:glyphicon             |
-| Icon (Font Awesome)		     | bs3-icon                       |
-
-### Images
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Thumbnail	 					 | bs3-thumbnail 				  |
-| Thumbnail with content		 | bs3-thumbnail:content		  |
-
-### Labels
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Label		 					 | bs3-label 	 				  |
-| Danger Label					 | bs3-label:danger				  |
-| Info Label					 | bs3-label:info 				  |
-| Success Label					 | bs3-label:success			  |
-| Warning Label					 | bs3-label:warning			  |
-
-### Pagination
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Pager		 					 | bs3-pager	 				  |
-| Aligned Pager             	 | bs3-pager:aligned 			  |
-| Pagination					 | bs3-pagination				  |
-| Pagination:small				 | bs3-pagination:small			  |
-| Pagination:large				 | bs3-pagination:large			  |
-
-### Navigation
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Navbar (basic navbar)			 | bs3-navbar	 				  |
-| Navbar Brand Element			 | bs3-navbar:brand				  |
-| Navbar Button					 | bs3-navbar:button			  |
-| Navbar Form 					 | bs3-navbar:form 				  |
-| Navbar Link 					 | bs3-navbar:link 				  |
-| Navbar Text 					 | bs3-navbar:text 				  |
-| Navbar Fixed-Botton			 | bs3-navbar:fixed-bottom		  |
-| Navbar Fixed-Top				 | bs3-navbar:fixed-top			  |
-| Navbar Inverse				 | bs3-navbar:inverse			  |
-| Navbar Responsive				 | bs3-navbar:responsive		  |
-| Navbar Static-Top				 | bs3-navbar:static-top		  |
-
-### Jumbotron
-
-| Component                		 | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Jumbotron (ex Hero Unit)		 | bs3-jumbotron 				  |
-
-### Panels
-
-| Component                      | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Panel                          | bs3-panel                      |
-| Panel (contextual)             | bs3-panel:{warning,success,info,danger,primary}                  |
-| Panel (with heading)           | bs3-panel:heading              |
-| Panel (with footer)            | bs3-panel:footer               |
-
-### List-groups
-
-| Component                      | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| List group                     | bs3-list-group                 |
-| List group (with badges)       | bs3-list-group:badges          |
-| List group (linked list)       | bs3-list-group:linked          |
-| List group (with content)      | bs3-list-group:content         |
-
-### Media Objects
-
-| Component                      | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Media Object                   | bs3-media-object               |
-
-### Clearfix
-
-| Component                      | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Clearfix                       | bs3-clearfix                   |
-
-### Wells
-
-| Component                      | Snippet code                   |
-|------------------------------- | :----------------------------: |
-| Well                           | bs3-well                       |
-| Well (small)                   | bs3-well:sm                    |
-| Well (large)                   | bs3-well:lg                    |
 
 ### License
 
-Bootstrap 3 - Sublime Plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+JSF & Facelets Snippets - Sublime Plugin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

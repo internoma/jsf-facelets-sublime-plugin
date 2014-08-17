@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:button value="${1}" styleClass="${2}">
+    ${0}
+</h:button>
+]]></content>
+	<tabTrigger>jsf-button</tabTrigger>
+</snippet>

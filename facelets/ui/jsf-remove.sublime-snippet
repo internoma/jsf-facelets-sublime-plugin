@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<ui:remove>
+    ${1}
+</ui:remove>${0}
+]]></content>
+	<tabTrigger>jsf-remove</tabTrigger>
+</snippet>

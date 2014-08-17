@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<ui:component binding="#{${1:myController.component}}" id="${2}">
+    ${0}
+</ui:component>
+]]></content>
+	<tabTrigger>jsf-component</tabTrigger>
+</snippet>
