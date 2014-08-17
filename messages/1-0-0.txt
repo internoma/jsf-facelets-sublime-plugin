@@ -1,5 +1,9 @@
-<snippet>
-	<content><![CDATA[
+=====================================================
+JSF & Facelets - Sublime Plugin - Has been updated !!
+=====================================================
+
+Added & Updated features
+------------------------
 ==========================================
   JSF - JSTL & FACELETS Snippets @by Alf
 ==========================================
@@ -14,7 +18,7 @@ jsf-help: this help
     jsf-if: <c:if />
     jsf-set: <c:set />
 
-<h: /> http://www.jsftoolbox.com/documentation/help/12-TagReference/html/index.jsf
+<h: />
 
     jsf-body: <h:body />
     jsf-button: <h:button />
@@ -34,7 +38,7 @@ jsf-help: this help
     jsf-outputlink: <h:outputLink />
     jsf-outputtext: <h:outputText />
 
-<ui: /> http://www.jsftoolbox.com/documentation/facelets/10-TagReference/ui.jsf
+<ui: />
 
     jsf-component: <ui:component /> The UI Component tag inserts a new UIComponent instance into the JSF component tree.
     jsf-composition: <ui:composition /> The UI Composition tag is a templating tag that wraps content to be included in another Facelet.
@@ -53,8 +57,10 @@ jsf-help: this help
     jsf:upper: #{fn:toUpperCase([variable]/'texto')}
     jsf:lower: #{fn:toLowerCase([variable]/'texto')}
 
-=======================================
 
-]]></content>
-	<tabTrigger>jsf-help</tabTrigger>
-</snippet>
+Documentation, examples & issue filing can be found here:
+https://github.com/internoma/jsf-facelets-sublime-plugin
+
+--------------------------------
+Follow me on Twitter: @internoma
+--------------------------------

@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[
+<h:outputStylesheet library="${1}">${2}</h:outputStylesheet>${0}
+]]></content>
+	<tabTrigger>jsf-outputstylesheet</tabTrigger>
+</snippet>
