@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:panelGroup rendered="#{${1}}">
+    ${0}
+</h:panelGroup>
+]]></content>
+	<tabTrigger>jsf-panelgroup</tabTrigger>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<ui:fragment rendered="#{${1}}">
+    ${0}
+</ui:fragment>
+]]></content>
+	<tabTrigger>jsf-fragment</tabTrigger>
+</snippet>

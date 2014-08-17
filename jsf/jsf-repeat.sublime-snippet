@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<ui:repeat id="${1:myID}" var="${2:myVar}" value="${3}" varStatus="${4:myStatus}">
+    ${0}
+</ui:repeat>
+]]></content>
+	<tabTrigger>jsf-repeat</tabTrigger>
+</snippet>

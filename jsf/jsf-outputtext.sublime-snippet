@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<h:outputText value="${1}" styleClass="${2}" rendered="${3}">
+    ${0}
+</h:outputText>
+]]></content>
+	<tabTrigger>jsf-outputtext</tabTrigger>
+</snippet>

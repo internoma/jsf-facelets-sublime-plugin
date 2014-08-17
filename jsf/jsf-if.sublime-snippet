@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<c:if test="#{${1}}">
+    ${0}
+</c:if>
+]]></content>
+	<tabTrigger>jsf-if</tabTrigger>
+</snippet>
