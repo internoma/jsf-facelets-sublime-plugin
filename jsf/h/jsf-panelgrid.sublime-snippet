@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<h:panelGrid id="${1}" columns="${2}" border="${3}" cellpadding="${4}" cellspacing="${5}">
+    <f:facet name="header">
+
+    </f:facet>
+    <f:facet name="footer">
+
+    </f:facet>
+</h:panelGrid>${0}
+]]></content>
+	<tabTrigger>jsf-panelgrid</tabTrigger>
+</snippet>

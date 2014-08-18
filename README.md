@@ -42,9 +42,19 @@ There are 3 methods for installing this plugin.
         jsf-form: <h:form />
         jsf-graphicimage: <h:graphicImage />
         jsf-head: <h:head />
+        jsf-inputhidden: <h:inputHidden />
+        jsf-inputsecret: <h:inputSecret />
+        jsf-inputtext: <h:inputText />
+        jsf-inputtextarea: <h:inputTextarea />
+        jsf-link: <h:link />
         jsf-panelgroup: <h:panelGroup />
+        jsf-panelgrid: <h:panelGrid />
         jsf-outputlink: <h:outputLink />
         jsf-outputtext: <h:outputText />
+        jsf-outputscript: <h:outputScript />
+        jsf-outputstylesheet: <h:outputStylesheet />
+        jsf-selectbooleancheckbox: <h:selectBooleanCheckbox />
+        jsf-selectmanycheckbox: <h:selectManyCheckbox />
 
     <ui: /> http://www.jsftoolbox.com/documentation/facelets/10-TagReference/ui.jsf
 

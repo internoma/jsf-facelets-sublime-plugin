@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<h:selectManyCheckbox id="${1}" value="#{${2}}">
+	<f:selectItem id="${3}" itemLabel="${4}" itemValue="${5}" />
+	${0}
+</h:selectManyCheckbox>
+]]></content>
+	<tabTrigger>jsf-selectmanycheckbox</tabTrigger>
+</snippet>
